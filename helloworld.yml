@@ -1,8 +1,8 @@
 ---
-- name: Hello World!
+- name: Play - Hello World!
   hosts: all
 
   tasks:
 
-  - name: Hello World!
+  - name: Task - Hello World!
     shell: echo "Hi! Tower is working!"
