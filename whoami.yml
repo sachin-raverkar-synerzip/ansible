@@ -5,3 +5,8 @@
       command: id -un
       register: login
     - debug: var=login
+    
+    - name: capture output of ip addr command
+      command: ip addr show enp0s8
+      register: enp0s8_details
+    - debug: var=enp0s8_details
