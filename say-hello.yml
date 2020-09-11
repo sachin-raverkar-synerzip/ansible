@@ -1,4 +1,4 @@
 ---
-- name: Hello World!
+- name: Hello World (Import Playbook)
   hosts: all
 - import_playbook: helloworld.yml
