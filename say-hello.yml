@@ -11,3 +11,4 @@
           availability-zone: us-east-1d
         region: us-east-1
     register: ec2_instance_info_result
+  - set_fact: result= {{ec2_instance_info_result}}
