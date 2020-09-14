@@ -6,6 +6,6 @@
   gather_facts: True
   tasks:
   - name: Get details of an EC2 instance
-    - ec2_instance_info:
+    ec2_instance_info:
         filters:
         availability-zone: us-east-1d
