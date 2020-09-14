@@ -1,7 +1,7 @@
 ---
 # Basic provisioning example
 - name: Get details of AWS resources
-  # hosts: localhost
+  hosts: localhost
   # connection: local
   # gather_facts: True
   tasks:
