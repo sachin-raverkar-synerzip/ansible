@@ -1,3 +1,11 @@
-- ec2_instance_info:
-    filters:
-      availability-zone: us-east-1d
+---
+# Basic provisioning example
+- name: Get details of AWS resources
+  hosts: localhost
+  connection: local
+  gather_facts: True
+  tasks:
+  - name: Get details of an EC2 instance
+    - ec2_instance_info:
+        filters:
+        availability-zone: us-east-1d
