@@ -1,4 +1,3 @@
----
-- name: Hello World (Import Playbook)
-  hosts: all
-- import_playbook: helloworld.yml
+- ec2_instance_info:
+    filters:
+      availability-zone: us-east-1d
