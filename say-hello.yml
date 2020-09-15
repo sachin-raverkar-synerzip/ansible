@@ -8,9 +8,9 @@
   - name: Get details of an EC2 instance
     ec2_instance_info:
         filters:
-          availability-zone: {{usep_aws_ec2_availability_zone}}
+          availability-zone: {{ usep_aws_ec2_availability_zone }}
         region: us-east-1
     register: ec2_instance_info_result
   - name: Print info
     debug: var="ec2_instance_info_result.instances"
-  - set_fact: ec2_instance_info_info = {{ec2_instance_info_result.instances}}
+  - set_fact: ec2_instance_info_info = {{ ec2_instance_info_result.instances }}
