@@ -13,4 +13,4 @@
     register: ec2_instance_info_result
   - name: Print info
     debug: var="ec2_instance_info_result.instances"
-  - set_fact: "{{ usep_result_aws_ec2_ec2_instance_info }}" = {{ ec2_instance_info_result.instances }}
+  - set_fact: "{{ usep_result_aws_ec2_ec2_instance_info }}" = "ec2_instance_info_result.instances"
